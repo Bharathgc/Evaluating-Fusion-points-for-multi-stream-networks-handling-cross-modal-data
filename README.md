@@ -51,3 +51,7 @@ To execute a fusion point test, Change to corresponding function name at `line 2
 ### Contributing Authors
 
 1. Kausic Gunasekkar - [Profile](https://github.com/kausic94)
+
+### License
+
+This project is licensed under the MIT License - see the [LICENSE.md]() file for details
