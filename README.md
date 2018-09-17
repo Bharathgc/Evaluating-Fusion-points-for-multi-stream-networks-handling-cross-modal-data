@@ -54,4 +54,4 @@ To execute a fusion point test, Change to corresponding function name at `line 2
 
 ### License
 
-This project is licensed under the MIT License - see the [LICENSE.md]() file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/Bharathgc/Evaluating-Fusion-points-for-multi-stream-networks-handling-cross-modal-data/blob/master/LICENSE) file for details
