@@ -20,11 +20,11 @@ We experimented with NYUD V2 dataset which is a collection of video sequences fr
 
 ### Installing
 
-Download or `git clone` the repoaitory to local machine. Change the input directory location in the fused_classifier.py file 
+Download or `git clone` the repoaitory to local machine. Change the input directory location in the `fused_classifier.py` file 
 
 ### Running The tests
 
-To execute a fusion point test, Change to corresponding function name at line 208 in the fusedClassifier.py file
+To execute a fusion point test, Change to corresponding function name at `line 208` in the fusedClassifier.py file
 
 1. Alexnet
   - Fuse Points ==> Name of the function
@@ -47,3 +47,7 @@ To execute a fusion point test, Change to corresponding function name at line 20
 	  - Fusion at 4	==>	resnet_fused4
 	  - Fusion at 5	==>	resnet_fused5
 	  - Fusion at 6	==>	resnet_fused6
+
+### Contributing Authors
+
+1. Kausic Gunasekkar - [Profile](https://github.com/kausic94)
