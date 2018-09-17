@@ -1,1 +1,1 @@
-# Evaluating-Fusion-points-for-multi-stream-networks-handling-cross-modal-data
+# Evaluating Fusion points for Multi-Stream Networks handling cross modal data
