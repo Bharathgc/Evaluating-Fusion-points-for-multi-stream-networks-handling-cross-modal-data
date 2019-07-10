@@ -15,12 +15,6 @@ import cnn_class as fc
 
 
 def load_data(source_path,std_size): 
-	'''
-	This method does the loading of data and shit. Source path contains images and data_file. 
-	data_file contains image names and classes. Don't judge me. I know the code could be better. 
-	data is resized to fit the model requirements. Labels are converted to numeric values.
-	Also, it's possible Bharath could be gay. Just putting it out there.
-	'''
 	global class_dict
 	print("Data is being Loaded. Kindly wait . . . .  :) :( ;) B) x) .. ran out of emojis")
 	file_h=open(source_path+data_file)
@@ -34,10 +28,7 @@ def load_data(source_path,std_size):
 	return(rgb_images,depth_images,labels)
 
 def normalizeData(rgb_images,viz=False):   
-	'''
-	This doesn't do any Normalization actually. I thought it would be moderately funny to add it here. 
-	Go ahead and change the method to do a mean center normalization. Won't make a big difference. Like I care
-	'''
+
 	rgb_images=(np.float32(rgb_images))/255.0
 	for k in range(3):
 		if(viz):
@@ -47,12 +38,7 @@ def normalizeData(rgb_images,viz=False):
 			plt.show()
 	return (rgb_images)
 		
-def training(train_output,train_input):  
-	'''
-	method for training. Forward pass and backprop included.  No biggie :)
-	Accuracy calculation tensor also included.
-	I wish human training was as simple. I would train pavithra to use her brain occasionally.
-	'''
+def training(train_output,train_input):
 
 	dataLength = len(train_input)
 	update_ops=tf.get_collection(tf.GraphKeys.UPDATE_OPS)
@@ -95,10 +81,6 @@ def training(train_output,train_input):
 	return (sess,loss_list,accuracy_list,time_list)		
 
 def validate(test_output,test_input,sess):  
-	'''
-	# Validation method. I use this for both validating and testing methods. 
-	Data and graph passed are different for the above mentioned phases.. I know, naming is confusing.. But hey, Fuck you! :p
-	'''
 	print("\nValidating\n")
 	dataLength=len(test_input)
 	prediction = tf.argmax(logits,1)
@@ -128,9 +110,7 @@ def validate(test_output,test_input,sess):
 	return (loss_list,accuracy_list,time_list)
 
 if __name__ =='__main__':
-	'''
-	Setting up the save environment for the log files
-	'''
+	
 	parser=argparse.ArgumentParser(description =  "Training two stream Classifiers")
 	parser.add_argument('model_name',help='Enter the model name. Logs files will be found under logs/<this name >')
 	model_name=parser.parse_args().model_name
